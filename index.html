@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/self.png" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shavlego Botchorishvili</title>
+  </head>
+  <body>
+    <div id="modal">
+      <button onclick="toggleModal()">close</button>
+      <img src="img/certificat.jpg" alt="" />
+    </div>
+    <!-- pre loader -->
+    <div id="pre-loader">
+      <div id="loader">
+        <span></span>
+        <span></span>
+      </div>
+      <div>
+        <h1>Loading</h1>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- menu -->
+
+    <div
+      id="menu-button"
+      onmousemove="menuEnter(event)"
+      onmouseleave="menuLeave(event)"
+      onclick="toggleMenu()"
+    >
+      <div id="menu-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="menu-container">
+      <a href="#top" class="menu-link" onclick="closeMenu()">
+        <h1>home page</h1>
+        <h2>home <span>page</span></h2>
+      </a>
+      <a href="#about" class="menu-link" onclick="closeMenu()">
+        <h1>about me</h1>
+        <h2>about <span>me</span></h2>
+      </a>
+      <a href="#portfolio" class="menu-link" onclick="closeMenu()">
+        <h1>my work</h1>
+        <h2>my <span>work</span></h2>
+      </a>
+      <a href="#contact" class="menu-link" onclick="closeMenu()">
+        <h1>contact me</h1>
+        <h2>contact <span>me</span></h2>
+      </a>
+      <a href="" class="menu-link" onclick="closeMenu()">
+        <h1>my blog</h1>
+        <h2>my <span>blog</span></h2>
+      </a>
+    </div>
+
+    <!-- Top -->
+
+    <div id="top" onmousemove="opacity(event)">
+      <div id="selfie">
+        <img src="img/selfie.png" alt="" />
+      </div>
+      <div id="particles-js"></div>
+      <h1 data-aos="fade-right">shavlego <span>botchorishvili</span></h1>
+      <h1 data-aos="fade-left">front - end <span>developer</span></h1>
+      <a href="#about">about me</a>
+    </div>
+
+    <!-- about me -->
+
+    <div id="about">
+      <div class="header">
+        <h1>about me</h1>
+        <h2>about <span>me</span></h2>
+      </div>
+      <div class="info">
+        <div class="left">
+          <h1>personal info</h1>
+          <div class="left-container">
+            <div>
+              <h2 data-aos="fade-up-right">
+                First Name : <span>Shavlego</span>
+              </h2>
+              <h2 data-aos="fade-up-right">
+                Age : <span id="age"></span> <span>Years</span>
+              </h2>
+              <h2 data-aos="fade-up-right">Job : <span>Freelance</span></h2>
+              <h2 data-aos="fade-up-right">
+                Phone :
+                <span><a href="tel:+995599548726">+995599548726</a></span>
+              </h2>
+            </div>
+            <div>
+              <h2 data-aos="fade-up-right">
+                Last Name : <span>Botchorishvili</span>
+              </h2>
+              <h2 data-aos="fade-up-right">
+                Nationality : <span>Georgian</span>
+              </h2>
+              <h2 data-aos="fade-up-right">
+                Location : <span>Georgia, Tbilisi</span>
+              </h2>
+              <h2 data-aos="fade-up-right">
+                Email :
+                <span
+                  ><a href="mailto:shavlego2019@gmail.com"
+                    >shavlego2019@gmail.com</a
+                  ></span
+                >
+              </h2>
+            </div>
+          </div>
+          <h2 data-aos="fade-up-right">
+            Languages : <span>Georgian, German, Russian, English</span>
+          </h2>
+          <a data-aos="flip-left" href="" download
+            ><p>download cv</p>
+            <img src="icons/download-pdf.png" alt=""
+          /></a>
+        </div>
+        <div class="right">
+          <div data-aos="zoom-out-down">
+            <h1>2</h1>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+          <div data-aos="zoom-out-down">
+            <h1>22</h1>
+            <p>COMPLETED PROJECTS</p>
+          </div>
+          <div data-aos="zoom-out-down" onclick="toggleModal()">
+            <img src="img/certificat.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <h1 class="subheader">my <span>skills</span></h1>
+      <div class="skills-container">
+        <div class="skill" id="html">
+          <div id="html-progress">
+            <span>0%</span>
+          </div>
+          <h3>Html</h3>
+        </div>
+        <div class="skill" id="css">
+          <div id="css-progress">
+            <span>0%</span>
+          </div>
+          <h3>Css</h3>
+        </div>
+        <div class="skill" id="scss">
+          <div id="scss-progress">
+            <span>0%</span>
+          </div>
+          <h3>Scss</h3>
+        </div>
+        <div class="skill" id="js">
+          <div id="js-progress">
+            <span>0%</span>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill" id="react">
+          <div id="react-progress">
+            <span>0%</span>
+          </div>
+          <h3>React.js</h3>
+        </div>
+        <div class="skill" id="jQuery">
+          <div id="jQuery-progress">
+            <span>0%</span>
+          </div>
+          <h3>jQuery</h3>
+        </div>
+        <div class="skill" id="bootstrap">
+          <div id="bootstrap-progress">
+            <span>0%</span>
+          </div>
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="skill" id="svg">
+          <div id="svg-progress">
+            <span>0%</span>
+          </div>
+          <h3>SVG</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="header">
+        <h1>my portfolio</h1>
+        <h2>my <span>portfolio</span></h2>
+      </div>
+      <div class="portfolio-container">
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Okruashvili</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="okruashvili/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>PStudio</h3>
+            <p>
+              Html, Css, JavaScript, jQuery
+            </p>
+            <a href="pavlika/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Ajara Water Aliance</h3>
+            <p>
+              Html, Css, JavaScript, jQuery, Bootstrap
+            </p>
+            <a href="http://awa.ge/html/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Bubble Game</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="aqua/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Hover Effect</h3>
+            <p>
+              Html, Css, vanilla-tilt.js
+            </p>
+            <a href="yellow/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Edena</h3>
+            <p>
+              React.js, Css
+            </p>
+            <a href="edena/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Animation</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="aiscreem/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Animation</h3>
+            <p>
+              Html, Css (transform), JavaScript
+            </p>
+            <a href="circle/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Animation</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="cube/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Dandelion</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="daro/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Error Page</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="error/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Memory Game</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="memory/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>SVG Animation</h3>
+            <p>
+              Html, Css, JavaScript, SVG
+            </p>
+            <a href="menu/svg.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>My Personal WebPage</h3>
+            <p>
+              Html, Css, JavaScript, SVG
+            </p>
+            <a href="old/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>My Personal WebPage</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="old1/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>SVG Animation</h3>
+            <p>
+              Html, Css, JavaScript, SVG
+            </p>
+            <a href="sun/mountain.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Symple Html Game</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="game/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Tic Tac Toe Game</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="tictactoy/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>RayMan Animation</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="jumper/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>My Personal Website</h3>
+            <p>
+              Html, Css, JavaScript
+            </p>
+            <a href="old2/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div
+          class="path"
+          onmouseenter="full(event)"
+          onmouseleave="half(event)"
+          onclick="expand(event)"
+          onmousemove="move(event)"
+        >
+          <div>
+            <h3>Animation</h3>
+            <p>
+              Html, Css
+            </p>
+            <a href="load/index.html" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="header">
+        <h1>contact me</h1>
+        <h2>contact <span>me</span></h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-left">
+          <div class="contact">
+            <img data-aos="fade-right" src="icons/delivery.png" alt="" />
+            <div>
+              <h1>location</h1>
+              <p
+                data-aos="fade-right"
+                onmouseenter="contact(event)"
+                onmouseleave="contact0(event)"
+              >
+                Tbilisi, Georgia
+              </p>
+            </div>
+          </div>
+          <div class="contact">
+            <img data-aos="fade-right" src="icons/telephone.png" alt="" />
+            <div>
+              <h1>call me</h1>
+              <a
+                data-aos="fade-right"
+                onmouseenter="contact(event)"
+                onmouseleave="contact0(event)"
+                href="tel:+995599548726"
+                >+995599548726</a
+              >
+            </div>
+          </div>
+          <div class="contact">
+            <img data-aos="fade-right" src="icons/email.png" alt="" />
+            <div>
+              <h1>mail me</h1>
+              <a
+                data-aos="fade-right"
+                onmouseenter="contact(event)"
+                onmouseleave="contact0(event)"
+                href="mailto:shavlego2019@gmail.com"
+                >shavlego2019@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <a
+            href="https://www.facebook.com/shavlego.bochorishvili"
+            target="_blank"
+            data-tilt
+            data-tilt-max="30"
+            data-tilt-speed="1000"
+            data-tilt-perspective="500"
+            onmouseenter="facebookIn(event)"
+            onmouseleave="facebookOut(event)"
+          >
+            <p>f</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shavlego-botchorishvili-335a78206/"
+            target="_blank"
+            data-tilt
+            data-tilt-max="30"
+            data-tilt-speed="1000"
+            data-tilt-perspective="500"
+            onmouseenter="facebookIn(event)"
+            onmouseleave="facebookOut(event)"
+          >
+            <p>in</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      onmousemove="footer(event)"
+      onmouseleave="footerLeave()"
+      onclick="window.location = '#top'"
+    >
+      <svg height="100%" width="100%">
+        <line
+          id="left-top"
+          x1="0"
+          y1="0"
+          x2="0"
+          y2="0"
+          style="stroke: #ffb401; stroke-width: 2"
+        />
+        <line
+          id="left-bottom"
+          x1="0"
+          y1="100%"
+          x2="0"
+          y2="100%"
+          style="stroke: #ffb401; stroke-width: 2"
+        />
+        <line
+          id="right-top"
+          x1="100%"
+          y1="0"
+          x2="100%"
+          y2="0"
+          style="stroke: #ffb401; stroke-width: 2"
+        />
+        <line
+          id="right-bottom"
+          x1="100%"
+          y1="100%"
+          x2="100%"
+          y2="100%"
+          style="stroke: #ffb401; stroke-width: 2"
+        />
+      </svg>
+      <a href="https://shavlego-botchorishvili.ge/" id="my-link"
+        >Shavlego <span>Botchorishvili</span>
+        <div id="atop"></div>
+        <div id="aleft"></div>
+        <div id="aright"></div>
+        <div id="abottom"></div>
+      </a>
+    </footer>
+
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    <script src="particles.js-master/particles.js"></script>
+    <script>
+      particlesJS.load(
+        "particles-js",
+        "particles.js-master/demo/particles.json",
+        function () {
+          console.log("callback - particles.js config loaded");
+        }
+      );
+    </script>
+    <script src="js/vanilla.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
